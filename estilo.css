@@ -1,0 +1,204 @@
+*{
+    margin:0 auto;
+}
+
+                                                                            /*HEADER*/
+
+header{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+.menu{
+
+    flex: 10%;
+    height: 70px;
+    display: flex; /*SÓ FUNCIONA SE TIVER DISPLAY: FLEX;*/
+    align-items: center;/* centraliza ne vertical */
+    justify-content: center; /* centraliza ne horizontal */
+    font-size: 40px;
+    cursor: pointer;
+}
+.titulo{
+    height: 70px;
+   
+    flex: 80%;
+    display: flex; /*SÓ FUNCIONA SE TIVER DISPLAY: FLEX;*/
+    align-items: center;/* centraliza ne vertical */
+    justify-content: center; /* centraliza ne horizontal */
+    font-size: 40px;
+    border: 10px rgb(36, 35, 35);
+}
+.logo{
+    height: 70px;
+    
+    flex: 10%;
+    display: flex; /*SÓ FUNCIONA SE TIVER DISPLAY: FLEX;*/
+    align-items: center;/* centraliza ne vertical */
+    justify-content: center; /* centraliza ne horizontal */
+}
+                                                                              /*NAV*/
+nav{
+    width: 100%;
+    height: 35px;
+    background-color: gray;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    font-size: 25px; /*tamanho da letra dos links*/
+}
+
+nav a:hover{
+ font-size: 30px;
+ color: white;
+} 
+
+
+.inicio, .temas, .historia, .estudo{
+    color: rgb(36, 35, 35);
+    font-size: 20px;
+    flex-direction: none;
+    flex: 25%;
+    display: flex;
+    align-items: center;
+}
+                                                                                         /*MAIN*/
+
+
+ main{
+    width: 100%;
+    height: 800px;
+  
+    display: flex;
+    flex-direction: column;
+    font-family: 25px;
+}
+.par_imagem1_texto1{
+    width: 100%;
+    margin-top: 120px;
+    flex-direction: row;
+   
+    display: flex;
+}
+
+
+.imagem_introducao_1{
+
+  flex-direction: row;
+  display: flex; /*SÓ FUNCIONA SE TIVER DISPLAY: FLEX;*/
+  align-items: center;/* centraliza ne vertical */
+ justify-content: center; /* centraliza ne horizontal */
+}
+.imagem_introducao_1 img{
+    width: 800px;
+    border-radius: 40px;
+}
+.texto_introducao_1{
+    
+    flex: 40%;
+    font-size: 30px;
+}
+.texto_introducao_1 {
+    padding-top: 100px;
+    padding-left: 30px;
+}
+.par_imagem2_texto2{
+    display: flex;
+    width: 100%;
+    margin-top: 150px;
+    flex-direction: row;
+ 
+}
+.par_imagem2_texto2 img{
+    width: 600px;
+}
+
+
+.imagem_introducao_2{
+    flex: 60%;
+     display: flex; /*SÓ FUNCIONA SE TIVER DISPLAY: FLEX;*/
+    align-items: center;/* centraliza ne vertical */
+    justify-content: center; /* centraliza ne horizontal */
+}
+.texto_introducao_2{
+    flex: 40%;
+    font-size: 30px;
+    margin-top: 100px;
+    padding-left: 100px;
+}
+
+                                                                                         /*FOOTER*/
+footer{
+    height: 150px;
+    width: 100%;
+    margin-top: 400px;
+    background-color: rgb(10, 10, 53);
+}
+
+@media screen  and (max-width: 480px) {
+
+    header{
+        width: 100%; /*largura 100% da tela*/
+    }
+    .titulo{
+        font-size: 30px; /*tamanho da letra do titulo*/
+    }
+    nav{
+        font-size: 15px; /*tamanho da letra das opcoes do menu*/
+    }
+    .menu{
+        margin-left: 10px;
+        font-size:25px;
+    }
+    
+    .par_imagem1_texto1{
+        margin-top: 10px; /*ajusta o espaco do conteudo em relacao ao nav*/
+    }
+    .texto_introducao_1{
+        font-size: 20px; /*tamanho da letra*/
+        padding-top: 10px; /*ajusta o espaco do texto em relacao ao nav*/
+    }
+
+    .imagem_introducao_1 img{
+        width: 200px; /*largura da imagem*/
+        height: 150px; /*altura da imagem, um pouco maior para celular*/
+        border-radius: 40px; /*arredondamento das bordas da imagem*/
+    }
+
+    .par_imagem2_texto2 img{
+        width: 300px;
+        margin-top: 40px;
+    }
+    .par_imagem2_texto2{
+        padding-right: 30px;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+    }
+    .par_imagem2_texto2 img{
+        padding-right: 30px;
+        width: 300px;
+        border-radius: 30px;
+    }
+    footer{
+        margin-top: 300px;
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+}
+    
+
+    footer a{
+        color: white;
+    }
+    
+}
